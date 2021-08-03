@@ -173,11 +173,11 @@ void ogs_write_file_value(const char *filename, const char *value) {
     }
 
     if ( (fp = fopen(filestring, "w")) == NULL) {
-        fprintf(stderr, "warning: could not open file %s", filename);
+        fprintf(stderr, "warning: could not open file %s\n", filename);
         return;
     }
 
-    fprintf(fp, "%s" value);
+    fprintf(fp, "%s", value);
     fclose(fp);
     return;
 }
