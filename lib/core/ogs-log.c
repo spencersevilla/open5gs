@@ -169,7 +169,7 @@ void ogs_write_file_value(const char *filename, const char *value) {
     strcat(filestring, filename);
 
     if (stat(BASEFILE, &st) == -1) {
-        mkdir(BASEFILE, 0644);
+        mkdir(BASEFILE, 0744);
     }
 
     if ( (fp = fopen(filestring, "w")) == NULL) {
