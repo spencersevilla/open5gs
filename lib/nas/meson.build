@@ -16,5 +16,3 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 subdir('common')
-subdir('5gs')
-subdir('eps')
